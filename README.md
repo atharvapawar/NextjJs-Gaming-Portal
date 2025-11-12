@@ -15,5 +15,3 @@ It showcases popular games with dynamic routes, detailed information pages, and 
 
 ---
 
-## 📂 Project Structure
-
