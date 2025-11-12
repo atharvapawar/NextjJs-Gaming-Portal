@@ -31,7 +31,7 @@ export const games: Game[] = [
     description:
       "Elden Ring is a dark fantasy open-world action RPG where players explore the Lands Between, battle demigods, and uncover ancient mysteries.",
     image:
-      "https://image.api.playstation.com/vulcan/ap/rnd/202111/2904/9gI3tkZ9GkVvFzOPfJ9TqE3T.png",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1245620/capsule_616x353.jpg?t=1748630546",
     rating: 4.9,
     developer: "FromSoftware",
     publisher: "Bandai Namco",
@@ -103,7 +103,7 @@ export const games: Game[] = [
     description:
       "Kratos and Atreus embark on an epic journey through the Nine Realms as Ragnarök — the end of the world — approaches.",
     image:
-      "https://image.api.playstation.com/vulcan/ap/rnd/202208/2416/bkfsItcA0I6nqbiqoxOamP0S.png",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2322010/capsule_616x353.jpg?t=1750909504",
     rating: 4.8,
     developer: "Santa Monica Studio",
     publisher: "Sony Interactive Entertainment",
@@ -202,7 +202,7 @@ export const games: Game[] = [
     description:
       "Aloy journeys west to uncover the mystery behind a deadly plague and ancient machines in a lush, post-apocalyptic world.",
     image:
-      "https://image.api.playstation.com/vulcan/ap/rnd/202108/0922/E6mby16BfD0yYxHQaYgW6T0g.png",
+      "https://cdn.wccftech.com/wp-content/uploads/2022/01/horizon-forbidden-west.jpg",
     rating: 4.6,
     developer: "Guerrilla Games",
     publisher: "Sony Interactive Entertainment",
@@ -233,7 +233,7 @@ export const games: Game[] = [
     description:
       "Peter Parker and Miles Morales face new threats in New York City, including the symbiote Venom.",
     image:
-      "https://image.api.playstation.com/vulcan/ap/rnd/202309/1520/27ecab675f8f2907c594d5de24df6c2a3d8e6c39b795c5cf.png",
+      "https://cdn1.epicgames.com/offer/b2818b59c0bb420e9647983dfd254931/EGS_Octopus_InsomniacGamesNixxesSoftware_S1_2560x1440-f27da78f484626718d1e22e7d6950ca5",
     rating: 4.7,
     developer: "Insomniac Games",
     publisher: "Sony Interactive Entertainment",

@@ -15,8 +15,12 @@ const GamePage = () => {
             key={game.id}
             href={`/games/${game.category}/${game.slug}`}
           >
-            <div>
-              <img src={game.image} alt={game.title} />
+            <div className="relative">
+              <img
+                className="w-full h-52 object-cover rounded-lg group-hover:opacity-80 transition"
+                src={game.image}
+                alt={game.title}
+              />
               <div></div>
             </div>
             <h2>{game.title}</h2>
