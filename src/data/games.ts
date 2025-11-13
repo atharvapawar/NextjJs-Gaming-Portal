@@ -1,8 +1,10 @@
+// app/data/games.ts
 export type Game = {
   id: string;
   slug: string;
   title: string;
   category: string;
+  categorySlug: string;
   description: string;
   image: string;
   rating: number;
@@ -28,6 +30,7 @@ export const games: Game[] = [
     slug: "elden-ring",
     title: "Elden Ring",
     category: "Action RPG",
+    categorySlug: "action-rpg",
     description:
       "Elden Ring is a dark fantasy open-world action RPG where players explore the Lands Between, battle demigods, and uncover ancient mysteries.",
     image:
@@ -64,8 +67,9 @@ export const games: Game[] = [
     slug: "cyberpunk-2077",
     title: "Cyberpunk 2077",
     category: "Open World RPG",
+    categorySlug: "open-world-rpg",
     description:
-      "Set in a dystopian Night City, Cyberpunk 2077 lets players assume the role of V — a mercenary navigating corporate chaos and cybernetic power.",
+      "Set in a dystopian Night City, Cyberpunk 2077 lets players assume the role of V - a mercenary navigating corporate chaos and cybernetic power.",
     image:
       "https://cdn.cloudflare.steamstatic.com/steam/apps/1091500/header.jpg",
     rating: 4.3,
@@ -82,7 +86,7 @@ export const games: Game[] = [
     story:
       "V searches for a one-of-a-kind implant that grants immortality, while powerful factions battle for control of Night City.",
     setting:
-      "Night City — a neon-drenched futuristic metropolis filled with crime and cyber enhancement.",
+      "Night City - a neon-drenched futuristic metropolis filled with crime and cyber enhancement.",
     combatStyle:
       "FPS-style combat mixing guns, blades, hacking, and stealth systems.",
     worldDesign:
@@ -100,8 +104,9 @@ export const games: Game[] = [
     slug: "god-of-war-ragnarok",
     title: "God of War: Ragnarök",
     category: "Action Adventure",
+    categorySlug: "action-adventure",
     description:
-      "Kratos and Atreus embark on an epic journey through the Nine Realms as Ragnarök — the end of the world — approaches.",
+      "Kratos and Atreus embark on an epic journey through the Nine Realms as Ragnarök the end of the world approaches.",
     image:
       "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2322010/capsule_616x353.jpg?t=1750909504",
     rating: 4.8,
@@ -123,7 +128,7 @@ export const games: Game[] = [
     worldDesign:
       "Semi-open world with interconnected realms and exploration hubs.",
     playerChoiceImpact:
-      "Minimal — linear story focus with emotional decisions.",
+      "Minimal - linear story focus with emotional decisions.",
     multiplayer: "None (single-player campaign).",
     expansionContent: [],
     difficulty: "Scalable (Give Me Story to Give Me God of War).",
@@ -135,6 +140,7 @@ export const games: Game[] = [
     slug: "the-witcher-3-wild-hunt",
     title: "The Witcher 3: Wild Hunt",
     category: "Action RPG",
+    categorySlug: "action-rpg",
     description:
       "Geralt of Rivia embarks on a journey across war-torn lands in search of his adopted daughter, Ciri, while battling monsters and politics.",
     image:
@@ -151,9 +157,9 @@ export const games: Game[] = [
       "Dialogue-driven choices",
     ],
     story:
-      "Geralt searches for Ciri while confronting the Wild Hunt — spectral warriors from another world.",
+      "Geralt searches for Ciri while confronting the Wild Hunt - spectral warriors from another world.",
     setting:
-      "The Continent — a medieval fantasy world filled with magic and war.",
+      "The Continent - a medieval fantasy world filled with magic and war.",
     combatStyle: "Fast-paced swordplay with spells (Signs).",
     worldDesign: "Open world with dynamic weather and immersive NPCs.",
     playerChoiceImpact:
@@ -168,6 +174,7 @@ export const games: Game[] = [
     slug: "red-dead-redemption-2",
     title: "Red Dead Redemption 2",
     category: "Action Adventure",
+    categorySlug: "action-adventure",
     description:
       "Arthur Morgan and the Van der Linde gang struggle to survive in a changing America filled with lawmen and betrayal.",
     image:
@@ -185,7 +192,7 @@ export const games: Game[] = [
     ],
     story:
       "An outlaw faces his mortality and loyalty as the Wild West comes to an end.",
-    setting: "Late 1800s America — forests, swamps, towns, and mountains.",
+    setting: "Late 1800s America - forests, swamps, towns, and mountains.",
     combatStyle: "Third-person and first-person shooting.",
     worldDesign: "Open world with extreme detail and realism.",
     playerChoiceImpact: "Honor system influences story and character outcomes.",
@@ -199,6 +206,7 @@ export const games: Game[] = [
     slug: "horizon-forbidden-west",
     title: "Horizon Forbidden West",
     category: "Action RPG",
+    categorySlug: "action-rpg",
     description:
       "Aloy journeys west to uncover the mystery behind a deadly plague and ancient machines in a lush, post-apocalyptic world.",
     image:
@@ -228,8 +236,9 @@ export const games: Game[] = [
   {
     id: "7",
     slug: "spider-man-2",
-    title: "Marvel’s Spider-Man 2",
+    title: "Marvel's Spider-Man 2",
     category: "Action Adventure",
+    categorySlug: "action-adventure",
     description:
       "Peter Parker and Miles Morales face new threats in New York City, including the symbiote Venom.",
     image:
@@ -259,8 +268,9 @@ export const games: Game[] = [
   {
     id: "8",
     slug: "assassins-creed-valhalla",
-    title: "Assassin’s Creed Valhalla",
+    title: "Assassin's Creed Valhalla",
     category: "Action RPG",
+    categorySlug: "action-rpg",
     description:
       "Lead Eivor, a Viking raider, in the conquest of England and uncover the truth behind the Hidden Ones.",
     image:
@@ -292,8 +302,9 @@ export const games: Game[] = [
     slug: "resident-evil-4-remake",
     title: "Resident Evil 4 Remake",
     category: "Survival Horror",
+    categorySlug: "survival-horror",
     description:
-      "Leon S. Kennedy returns to rescue the president’s daughter in a terrifying reimagining of the classic horror masterpiece.",
+      "Leon S. Kennedy returns to rescue the president's daughter in a terrifying reimagining of the classic horror masterpiece.",
     image:
       "https://cdn.cloudflare.steamstatic.com/steam/apps/2050650/header.jpg",
     rating: 4.8,
@@ -312,7 +323,7 @@ export const games: Game[] = [
     setting: "European village and castle environments.",
     combatStyle: "Tactical shooting with survival mechanics.",
     worldDesign: "Linear progression with detailed horror environments.",
-    playerChoiceImpact: "Minimal — cinematic storytelling focus.",
+    playerChoiceImpact: "Minimal - cinematic storytelling focus.",
     multiplayer: "None (single-player).",
     expansionContent: ["Separate Ways DLC"],
     difficulty: "Standard to Professional modes.",
@@ -323,8 +334,9 @@ export const games: Game[] = [
     slug: "zelda-tears-of-the-kingdom",
     title: "The Legend of Zelda: Tears of the Kingdom",
     category: "Adventure",
+    categorySlug: "adventure",
     description:
-      "Link explores the skies and lands of Hyrule, using creativity and physics-based tools to face Ganondorf’s return.",
+      "Link explores the skies and lands of Hyrule, using creativity and physics-based tools to face Ganondorf's return.",
     image:
       "https://cdn.cloudflare.steamstatic.com/steam/apps/2397000/header.jpg",
     rating: 4.9,
@@ -340,25 +352,16 @@ export const games: Game[] = [
     ],
     story:
       "Link and Zelda confront Ganondorf as darkness spreads across the skies and depths of Hyrule.",
-    setting: "Hyrule’s sky islands, depths, and overworld.",
+    setting: "Hyrule's sky islands, depths, and overworld.",
     combatStyle: "Third-person melee and ranged combat.",
     worldDesign: "Expansive vertical open world.",
-    playerChoiceImpact: "High — open-ended exploration and creative solutions.",
+    playerChoiceImpact: "High - open-ended exploration and creative solutions.",
     multiplayer: "None (single-player).",
     expansionContent: [],
     difficulty: "Moderate (exploration-focused).",
     progressionSystem: "Upgrade hearts, stamina, and gear.",
   },
 ];
-
-// 🧠 Utility functions
-export function getGameBySlug(slug: string): Game | undefined {
-  return games.find((g) => g.slug === slug);
-}
-
-export function getGameById(id: string): Game | undefined {
-  return games.find((g) => g.id === id);
-}
 
 export const categories = [
   { slug: "action-rpg", name: "Action RPG" },
